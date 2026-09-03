@@ -10,7 +10,7 @@ const config = {
   url: 'https://clias.ucuenca.edu.ec',
   baseUrl: '/docs/',
 
-  organizationName: 'chr1s23',
+  organizationName: 'grupoide2',
   projectName: 'clias-docs',
   trailingSlash: false,
 
