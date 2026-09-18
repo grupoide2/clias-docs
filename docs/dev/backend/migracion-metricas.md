@@ -403,8 +403,14 @@ las de web con `UPDATE recurso_multimedia SET destino='WEB' WHERE slug LIKE 'cap
 - `destino` distingue para quién es cada recurso: `APP` (clias-app) o `WEB`
   (clias-web). `clias-admin` → Recursos multimedia muestra el catálogo completo de
   slugs conocidos agrupado por destino, con `descripcion` y si ya tienen archivo.
-- Slugs: `video_uso_app`, `app_video_*` y `blog_*` (los consume la app);
-  `web_video_*` y `captura_web_1..8` (los consume `clias-web`).
+- Slugs: `video_uso_app` (video guía del automuestreo — chatbot y dashboard),
+  `video_tutorial_app` (tutorial general de uso — botón de ayuda "?" de la
+  barra superior), `app_video_*` y `blog_*` (los consume la app);
+  `web_video_*` y `captura_web_1..8` (los consume `clias-web`). Ambos
+  `video_uso_app` y `video_tutorial_app` tienen fallback embebido en el APK
+  (`assets/videos/automuestreo.mp4` y `assets/videos/sample.mp4`
+  respectivamente) si el backend no tiene el recurso publicado — ver
+  `RecursoService` en `clias-app`.
 
 ## 4. Corte del recordatorio "realízate el examen"
 

@@ -171,7 +171,8 @@ de la pantalla Recursos, portadas de blog) y de **clias-web** (videos de portada
 videos instructivos de FAQ, capturas de la app). Binarios en disco
 (`{app.recursos.dir}`), metadata en `recurso_multimedia`. Cada recurso lleva
 `destino` (`APP` \| `WEB`), `categoria` y `descripcion`. Slugs conocidos: `video_uso_app`,
-`app_video_*`, `blog_*`, `web_video_*`, `captura_web_1..8` (catálogo completo en `clias-admin`).
+`video_tutorial_app`, `app_video_*`, `blog_*`, `web_video_*`, `captura_web_1..8`
+(catálogo completo en `clias-admin`).
 
 | Método | Ruta | Acceso | Descripción |
 |--------|------|--------|-------------|
